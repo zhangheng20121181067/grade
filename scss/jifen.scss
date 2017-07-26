@@ -1,0 +1,86 @@
+$white: #fff;
+$fenred:#e97190;
+$bor999:#999;
+
+$fon28:.28rem;
+$fon30:.30rem;
+$fon32:.32rem;
+$fon34:.34rem;
+$fon36:.36rem;
+$fon38:.38rem;
+$fon44:.44rem;
+
+body{
+  background: url(../images/bg.png) no-repeat  center;
+  background-size: cover;
+}
+.main{
+  padding-bottom:0.8rem;
+  .user{
+    padding-top:0.2rem;
+    position:relative;
+    height:2.62rem;
+    background: url(../images/userBg.png) no-repeat  center;
+    background-size: cover;
+    &>p{
+      position:absolute;
+      right:0.3rem;
+      top:0.3rem;
+      font-size:$fon28;
+      color:#a6381e;
+    }
+    .userPic{
+      width:1.52rem;
+      height:1.52rem;
+      margin:0.55rem 0 0.55rem 0.25rem;
+      border-radius: 50%;
+      background: url(../images/touxiang.png) no-repeat  center;
+    }
+    .userInfo{
+      margin-left:0.25rem;
+      height:2.62rem;
+      .table-cell{
+        text-align: left;
+        h4{
+          font-size: 0.4rem;
+          color:#e0e1e2;
+          line-height:0.64rem;
+        }
+        p{
+          font-size:0.3rem;
+          color:#6a6e6f;
+          line-height: 0.5rem;
+          .jifen{
+            font-size:0.3rem;
+            color:#487768;
+            border-bottom:2px solid #487768;
+            margin-left:0.3rem;
+          }
+        }
+      }
+    }
+
+  }
+  .paiming{
+    width:5.22rem;
+    margin:1.25rem auto 0;
+    table{
+       thead{
+         font-size: $fon30;
+         color:$white
+       }
+       tbody{
+        font-size: $fon28;
+        color:$white
+       }
+      th,td{
+        width:1.28rem;
+        height:0.66rem;
+        line-height: 0.66rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
