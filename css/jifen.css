@@ -45,7 +45,7 @@ body {
     top:5rem;*/ }
   .main .paiming {
     width: 5.22rem;
-    padding: 3.6rem 0 0.8rem;
+    padding: 3.6rem 0 0;
     margin: 0 auto; }
     .main .paiming table thead {
       font-size: 0.3rem;
