@@ -2,7 +2,6 @@ $white: #fff;
 $fenred:#e97190;
 $bor999:#999;
 
-$fon28:.28rem;
 $fon30:.30rem;
 $fon32:.32rem;
 $fon34:.34rem;
@@ -20,19 +19,29 @@ body{
   width:100%;
   height:2.40rem;
   background-color:#27292b;
+  .guize{
+    font-size: $fon32;
+    color:#fff;
+   position: absolute;
+    right:.2rem;
+    top:.3rem;
+  }
   &>p{
     position:absolute;
     right:0.3rem;
-    top:0.3rem;
+    top:0.2rem;
     font-size:$fon30;
     color:$white;
   }
   .userPic{
-    width:1.52rem;
-    height:1.52rem;
-    margin:0.55rem 0 0.55rem 0.25rem;
+    width:1.80rem;
+    height:1.80rem;
+    margin:0.2rem 0 0.2rem 0.25rem;
     border-radius: 50%;
-    background: url(../images/touxiang.png) no-repeat  center;
+    background-repeat: no-repeat;
+    background-position: center;
+   /* background-image: url(../images/touxiang.png);*/
+    background-size: cover;
   }
   .userInfo{
     margin-left:0.25rem;
@@ -40,73 +49,157 @@ body{
     .table-cell{
       text-align: left;
       h4{
-        font-size: 0.4rem;
+        font-size: 0.42rem;
         color:#e0e1e2;
-        line-height:0.76rem;
+        height:0.68rem;
+        line-height:0.68rem;
       }
       p{
-        height:0.64rem;
-        line-height: 0.64rem;
+        height:0.56rem;
+        line-height: 0.56rem;
         span{display:block;
           font-size:0.3rem;
         }
         .card{
-          color:#6a6e6f;
+          color:#a5591f;
+          font-size: .34rem;
+          background-color: #fcdf09;
+          border-radius: 6px;
+          padding:0 4px;
+
+          line-height: .42rem;
+          margin-top:.07rem;
+          font-weight:bold;
+        }
+        .honor{
+          margin-left:0.3rem;
+          font-size:0.36rem;
+          color:#fff;
+          font-weight:bold;
         }
         .jifen{
-          height:0.54rem;
+          height:0.50rem;
           color:#487768;
           border-bottom:2px solid #487768;
           margin-left:0.3rem;
+          font-size: .36rem;
+        }
+        b{
+          font-size: .36rem;
+          margin-left:0.04rem;
+          color:#487768;
         }
         .refresh{
           display:inline-block;
-          margin-left:0.3rem;
+          margin-left:0.2rem;
           width:.34rem;
           height:.50rem;
           background: url(../images/refresh.png) no-repeat bottom center;
           background-size: contain;
         }
       }
+      .dengji{
+        margin-top:4px;
+       span{
+         width:.28rem;
+         height:.28rem;
+         float:left;
+         display:none;
+         &.zuan{
+           background-repeat: no-repeat;
+           background-position: center;
+           background-image: url(../images/zuan.png);
+           background-size: cover;
+         }
+         &.guan{
+           background-repeat: no-repeat;
+           background-position: center;
+           background-image: url(../images/guan.png);
+           background-size: cover;
+         }
+         &.block{
+           display:block;
+
+         }
+       }
+      }
     }
   }
 }
 .main{
   .container{
-    padding:2.60rem 0 0;
-    .mingxi{
+    padding:2.40rem 0 0;
+    .mingci{
       color:#ea5413;
     }
-    h4{
-      font-size: $fon30;
-      color:#fff;
-      line-height: .84rem;
-      text-align: right;
-      margin-right:.3rem;
-    }
-    .myOrder{
+    .myOrder,.top100{
       font-size: $fon36;
       color:#fff;
-      line-height: .80rem;
+      line-height: 1.0rem;
       margin-left:.3rem;
     }
-    .pmList{
-      width:6.2rem;
-      margin:0 auto;
-      table{
-        padding:0 .2rem;
-        background-color: rgba(162,163,163,.3);
-        tbody{
-          font-size: $fon30;
-          color:$white
-        }
-        th,td{
-          width:1.85rem;
-          height:0.60rem;
-          line-height: 0.60rem;
+    .top100{
+      margin-top:.3rem;
+      font-size: $fon32;
+      line-height: .8rem;
+    }
+    .intro{
+        width:7.0rem;
+        height:0.56rem;
+        margin:0 auto;
+        li {
+          width: 1.60rem;
+          height:0.56rem;
+          line-height: 0.56rem;
+          float: left;
           text-align: center;
+          font-size: $fon30;
+          color:$white;
+          &.shenglue {
+            width: 2.00rem;
+          }
+          &:last-child {
+            width: 1.80rem;
+          }
+        }
+    }
+    .pmList{
+      &.topHundred{
+        height:7.7rem;
+      }
+      width:7.0rem;
+
+      overflow-y: scroll;
+      margin:0 auto;
+      font-size: $fon30;
+      color:$white;
+      background-color: rgba(162,163,163,.3);
+      div{
+        height:0.70rem;
+        li{
+          width:1.60rem;
+          height:0.70rem;
+          line-height:0.70rem;
+          float:left;
+          text-align: center;
+          &.shenglue{
+              width:2.00rem;
+          }
+          &:last-child{
+            width:1.80rem;
+          }
+        }
+        &.green{
+          background-color: lightgreen;
+          color:green;
         }
       }
+    }
+    p{
+      margin:.15rem .4rem;
+      font-size: $fon32;
+      line-height: .50rem;
+      color:#fff;
     }
   }
 }

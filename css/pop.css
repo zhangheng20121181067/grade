@@ -1,0 +1,8 @@
+*{padding:0;margin:0}
+.modal{background: #000;opacity:.6;width:100%;left:0;top:0;position: absolute; display: none}
+.pop{width:7.0rem;padding:.2rem 0;text-align:center;background: #fff;opacity: .8;position: fixed; display:none;}
+.pop h3{line-height: 40px;}
+.pop .sure{width:1.2rem;height:0.8rem;line-height:.8rem;margin:.25rem auto;
+    font-size: .34rem;background-color: #00aecd;border-radius: 5px;}
+
+.pop .td{line-height:.6rem;font-size: .34rem;width:50%;float:left}
